@@ -1,0 +1,25 @@
+{
+  "name": "proyectofinal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miliruiz/repo.git"
+  },
+  "author": "Milagros Abril Ruiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miliruiz/repo/issues"
+  },
+  "homepage": "https://github.com/miliruiz/repo#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
