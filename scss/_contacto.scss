@@ -1,0 +1,63 @@
+.flex__conteiner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: $comprar;
+    padding: 40px;
+    margin: 80px 60px;
+
+    .form {
+        min-width: 300px;
+        padding: 50px;
+        flex: 1;
+        text-align: right;
+    
+    }
+    
+    .form__section {
+        flex-direction: column;
+    }
+    
+    .form__input {
+        width: 100%;
+        padding: 7px;
+        margin: 6px 0px;
+        border: none;
+        border-bottom: 3px solid #ABEBC6;
+        background: transparent;
+        color: #fff;
+    }
+    
+    .form__input:focus {
+        outline: none;
+    }
+    
+    .form textarea {
+        min-height: 100px;
+        resize: none;
+    
+    }
+    
+    
+    .form__img {
+        flex: 1;
+        padding-left: 20px;
+        display: flex;
+    }
+    
+    .form__img img {
+        margin: auto;
+    }
+    
+    
+    .form input[type="submit"] {
+        background-color: #ABEBC6;
+        padding: 10px;
+        border: none;
+    }
+    
+    .form input[type="submit"]:hover {
+        background-color: #8dd3aa;
+    }
+}

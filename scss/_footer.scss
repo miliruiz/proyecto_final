@@ -1,0 +1,30 @@
+footer {
+    background: $comprar;
+    padding: 60px 0 30px 0;
+    overflow: hidden;
+
+    .contenedor__footer {
+        display: flex;
+        width: 90%;
+        justify-content: space-evenly;
+        margin: auto;
+        padding-bottom: 50px;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .contenido__footer {
+        text-align: center;
+    }
+    
+    .contenido__footer h4 {
+        color: #fff;
+        border-bottom: 3px solid #ABEBC6;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    
+    .contenido__footer p {
+        color: #ccc;
+    }
+}
