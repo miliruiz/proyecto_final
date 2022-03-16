@@ -3,6 +3,9 @@
 @import "_productos";
 @import "_footer";
 @import "_contacto";
+@import "_beneficios";
+
+
 
 $comprar: #414141cc;
 
@@ -14,22 +17,27 @@ $comprar: #414141cc;
     box-sizing: border-box;
 }
 
-/*BODY*/
+
 
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
-/*MAIN*/
+
 
 main {
     overflow: hidden;
 }
-
+ 
 @media screen and (min-width: 700px) and (max-width: 1045px) {
     .titulo h1 {
         font-size: 40px;
         padding: 15px;
+    }
+
+    ul {
+        font-size: 25x;
+        text-align: center;
     }
 
     main .texto__sobrenosotros {
@@ -57,7 +65,7 @@ main {
         }
     
         ul {
-            font-size: 13px;
+            font-size: 20x;
             text-align: center;
         }
     
@@ -68,7 +76,6 @@ main {
     }
 
 
-    /*Inicio*/
 
 
     main .texto__sobrenosotros {
@@ -86,9 +93,6 @@ main {
     }
 
 
-    /*FOOTER*/
-
-
     .contenido__footer h4 {
         font-size: 15px;
     }
@@ -100,14 +104,21 @@ main {
         background-position: center;
 
         ul {
-            padding: 20px 0 0 0;
+            padding: 40px 0;
             text-align: center;
             margin-left: 35px;
+            font-size: 17px;
+        }
+
+        li a {
+            padding: 2px 7px 10px 10px;
+            margin-right: 20px;
+            margin-bottom: 40px;
         }
     
         ul>a {
             margin-right: 20px;
-            padding: 10px;
+            padding: 20px;
         }
     
         .titulo h1 {
@@ -121,7 +132,7 @@ main {
     }
 
 
-    /*Inicio*/
+
 
     main .texto__sobrenosotros {
         height: 550px;
@@ -137,7 +148,7 @@ main {
     }
 
 
-    /*FOOTER*/
+   
 
 
     .contenedor__footer {

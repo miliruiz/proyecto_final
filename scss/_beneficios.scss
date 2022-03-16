@@ -1,0 +1,63 @@
+
+
+/*Maps*/
+
+$headings: (
+    h1: rgb(34, 224, 151),
+    h2: blue,
+    h3: violet,
+    h4: red,
+    h5: yellow,
+    h6: grey,
+);
+
+@each $name-color, $bgcolor in $headings {
+    .#{$name-color} {
+        background-color: $bgcolor;
+    }
+ }
+
+
+
+$sizes: (
+    h1: 5em,
+    h2: 4em,
+    h3: 3em,
+    h4: 2em,
+    h5: 1em,
+    h6: 0.5em,
+);
+
+$h1: map-get($sizes, h1 );
+
+.h1 {
+    font-size: $h1;
+}
+
+
+/*Mixin*/
+
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+ }
+ .h1 {
+    @include sizes(300px, 100px);
+ }
+
+
+/*Extend*/
+
+.h2{
+     width: 300px;
+     height: 100px;
+     text-decoration: underline;
+
+}
+
+.h3{
+    @extend .h2;
+    color: #fff;
+
+}

@@ -1,5 +1,5 @@
 
-
+ $comprar: #414141cc;
 
 .card {
     border: none;
@@ -19,6 +19,10 @@
         color: rgb(129, 129, 129);
     }
     
+    
+    $comprar: #414141cc;
+    
+    
     .comprar {
         background-color: #fff;
         color: #000;
@@ -31,7 +35,9 @@
     
     .comprar:hover {
         background-color: $comprar;
-        border-color: $comprar;
+        border-color: #414141cc;
         transform: scale(1.1);
+        color: #fff;
     }
 }
+

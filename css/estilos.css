@@ -97,7 +97,8 @@ main .img__inicio img {
   .card .comprar:hover {
     background-color: #414141cc;
     border-color: #414141cc;
-    transform: scale(1.1); }
+    transform: scale(1.1);
+    color: #fff; }
 
 footer {
   background: #414141cc;
@@ -126,7 +127,7 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #414141cb;
+  background-color: #414141cc;
   padding: 40px;
   margin: 80px 60px; }
   .flex__conteiner .form {
@@ -162,16 +163,50 @@ footer {
   .flex__conteiner .form input[type="submit"]:hover {
     background-color: #8dd3aa; }
 
+/*Maps*/
+.h1 {
+  background-color: #22e097; }
+
+.h2, .h3 {
+  background-color: blue; }
+
+.h3 {
+  background-color: violet; }
+
+.h4 {
+  background-color: red; }
+
+.h5 {
+  background-color: yellow; }
+
+.h6 {
+  background-color: grey; }
+
+.h1 {
+  font-size: 5em; }
+
+/*Mixin*/
+.h1 {
+  height: 100px;
+  width: 300px; }
+
+/*Extend*/
+.h2, .h3 {
+  width: 300px;
+  height: 100px;
+  text-decoration: underline; }
+
+.h3 {
+  color: #fff; }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-/*BODY*/
 body {
   font-family: 'Open Sans', sans-serif; }
 
-/*MAIN*/
 main {
   overflow: hidden; }
 
@@ -179,6 +214,9 @@ main {
   .titulo h1 {
     font-size: 40px;
     padding: 15px; }
+  ul {
+    font-size: 25x;
+    text-align: center; }
   main .texto__sobrenosotros {
     height: 100%;
     width: 90%;
@@ -196,12 +234,11 @@ main {
       font-size: 30px;
       padding: 10px; }
     header ul {
-      font-size: 13px;
+      font-size: 20x;
       text-align: center; }
     header li {
       display: inline;
       margin: 0 7px 0 0; }
-  /*Inicio*/
   main .texto__sobrenosotros {
     height: 50%;
     width: 80%;
@@ -210,7 +247,6 @@ main {
   #carouselExampleControls {
     max-width: 40%;
     margin-left: 30%; }
-  /*FOOTER*/
   .contenido__footer h4 {
     font-size: 15px; } }
 
@@ -218,18 +254,22 @@ main {
   header {
     background-position: center; }
     header ul {
-      padding: 20px 0 0 0;
+      padding: 40px 0;
       text-align: center;
-      margin-left: 35px; }
+      margin-left: 35px;
+      font-size: 17px; }
+    header li a {
+      padding: 2px 7px 10px 10px;
+      margin-right: 20px;
+      margin-bottom: 40px; }
     header ul > a {
       margin-right: 20px;
-      padding: 10px; }
+      padding: 20px; }
     header .titulo h1 {
       font-size: 35px;
       padding: 15px; }
     header .titulo h2 {
       font-size: 20px; }
-  /*Inicio*/
   main .texto__sobrenosotros {
     height: 550px;
     width: 250px;
@@ -238,7 +278,6 @@ main {
   #carouselExampleControls {
     margin-left: 10%;
     max-width: 50%; }
-  /*FOOTER*/
   .contenedor__footer {
     flex-direction: column;
     border: none; }
