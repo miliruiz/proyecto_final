@@ -199,6 +199,9 @@ footer {
 .h3 {
   color: #fff; }
 
+.accordion {
+  margin-bottom: 70px; }
+
 * {
   margin: 0;
   padding: 0;
