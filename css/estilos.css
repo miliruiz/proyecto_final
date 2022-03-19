@@ -99,6 +99,8 @@ main .img__inicio img {
     border-color: #414141cc;
     transform: scale(1.1);
     color: #fff; }
+  .card .comprar:focus {
+    box-shadow: inherit; }
 
 footer {
   background: #414141cc;
@@ -163,44 +165,28 @@ footer {
   .flex__conteiner .form input[type="submit"]:hover {
     background-color: #8dd3aa; }
 
-/*Maps*/
-.h1 {
-  background-color: #22e097; }
-
-.h2, .h3 {
-  background-color: blue; }
-
-.h3 {
-  background-color: violet; }
-
-.h4 {
-  background-color: red; }
-
-.h5 {
-  background-color: yellow; }
-
-.h6 {
-  background-color: grey; }
-
-.h1 {
-  font-size: 5em; }
-
-/*Mixin*/
-.h1 {
-  height: 100px;
-  width: 300px; }
-
-/*Extend*/
-.h2, .h3 {
-  width: 300px;
-  height: 100px;
-  text-decoration: underline; }
-
-.h3 {
-  color: #fff; }
-
 .accordion {
-  margin-bottom: 70px; }
+  margin-bottom: 70px;
+  width: 70%;
+  margin-left: 15%;
+  margin-bottom: 40px; }
+  .accordion .accordion-item {
+    border: none;
+    margin-bottom: 50px; }
+  .accordion .accordion-button {
+    color: #424242;
+    transition: none;
+    font-size: 20px;
+    background-color: #fff; }
+  .accordion .accordion-button:not(.collapsed) {
+    color: #424242; }
+  .accordion .accordion-button:not(.collapsed)::after {
+    filter: brightness(10%); }
+  .accordion .accordion-button:focus {
+    box-shadow: inherit;
+    background-color: #fff; }
+  .accordion .accordion-body {
+    color: rgba(66, 66, 66, 0.781); }
 
 * {
   margin: 0;

@@ -1,3 +1,38 @@
 .accordion {
     margin-bottom: 70px;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 40px;
+
+    .accordion-item {
+        border: none;
+        margin-bottom: 50px;
+    }
+
+    .accordion-button{
+        color: rgb(66, 66, 66);
+        transition: none;
+        font-size: 20px;
+        background-color: #fff;
+    }
+
+    .accordion-button:not(.collapsed) {
+        color: rgb(66, 66, 66);
+        
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        filter: brightness(10%);
+        
+    }
+
+    .accordion-button:focus{
+        box-shadow: inherit;
+        background-color: #fff;
+    }
+
+    .accordion-body{
+        color: rgba(66, 66, 66, 0.781);
+    }
+
 }
