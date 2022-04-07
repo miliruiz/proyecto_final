@@ -8,6 +8,9 @@
 
 
 
+
+
+
 $comprar: #414141cc;
 
 
@@ -31,10 +34,7 @@ main {
 }
  
 @media screen and (min-width: 700px) and (max-width: 1045px) {
-    .titulo h1 {
-        font-size: 40px;
-        padding: 15px;
-    }
+    
 
     ul {
         font-size: 25x;
@@ -53,31 +53,16 @@ main {
         max-width: 40%;
         margin-bottom: 50px;
     }
-
 }
 
 @media screen and (min-width: 500px) and (max-width: 700px) {
     header {
-        background-position: center;
-
-        .titulo h1 {
-            font-size: 30px;
-            padding: 10px;
-        }
     
         ul {
             font-size: 20x;
             text-align: center;
         }
-    
-        li {
-            display: inline;
-            margin: 0 7px 0 0;
-        }
     }
-
-
-
 
     main .texto__sobrenosotros {
         height: 50%;
@@ -97,6 +82,18 @@ main {
     .contenido__footer h4 {
         font-size: 15px;
     }
+
+    .home-testimonial {
+        height: 1100px;
+    }
+
+    .home-testimonial-bottom {
+        background-color: #737373;
+    }
+
+    .tour-item {
+        margin-bottom: 40px;
+    }
 }
 
 @media screen and (min-width: 350px) and (max-width: 500px) {
@@ -111,25 +108,7 @@ main {
             font-size: 17px;
         }
 
-        li a {
-            padding: 2px 7px 10px 10px;
-            margin-right: 20px;
-            margin-bottom: 40px;
-        }
     
-        ul>a {
-            margin-right: 20px;
-            padding: 20px;
-        }
-    
-        .titulo h1 {
-            font-size: 35px;
-            padding: 15px;
-        }
-    
-        .titulo h2 {
-            font-size: 20px;
-        }
     }
 
 
@@ -149,7 +128,23 @@ main {
     }
 
 
+    .home-testimonial {
+        height: 1250px;
+    }
+
+    .home-testimonial-bottom {
+        background-color: #737373;
+    }
+
+    .home-testimonial h2 {
+        font-size: 20px;
+    }
+
+    .tour-item {
+        margin-bottom: 40px;
+    }
    
+
 
 
     .contenedor__footer {
@@ -164,12 +159,41 @@ main {
 
     .contenido__footer h4 {
         border: none;
+        font-size: 16px !important;
+        margin: 15px;
     }
 
     .contenido__footer p {
         color: #ccc;
         border-bottom: 1px solid #f2f2f2;
         padding-bottom: 20px;
+        font-size: 15px;
     }
 }
 
+@media screen and (min-width: 505px) and (max-width: 767px) {
+    .home-testimonial {
+        height: 1100px;
+    }
+
+    .home-testimonial-bottom {
+        background-color: #737373;
+    }
+
+    .tour-item {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 990px) {
+    .home-testimonial {
+        height: 550px;
+    }
+    .home-testimonial-bottom {
+    background-color: #737373;
+    
+    
+}
+
+
+}

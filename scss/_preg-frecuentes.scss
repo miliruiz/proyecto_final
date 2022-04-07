@@ -1,23 +1,24 @@
 .accordion {
-    margin-bottom: 70px;
     width: 70%;
     margin-left: 15%;
-    margin-bottom: 40px;
+    
 
     .accordion-item {
         border: none;
         margin-bottom: 50px;
+        
     }
 
     .accordion-button{
-        color: rgb(66, 66, 66);
+        color: rgb(255, 254, 254);
         transition: none;
         font-size: 20px;
-        background-color: #fff;
+        background-color: rgba(37, 37, 37, 0.822);
+        border-radius: 30px !important;
     }
 
     .accordion-button:not(.collapsed) {
-        color: rgb(66, 66, 66);
+        color: rgb(252, 252, 252);
         
     }
 
@@ -28,7 +29,7 @@
 
     .accordion-button:focus{
         box-shadow: inherit;
-        background-color: #fff;
+        background-color: rgba(37, 37, 37, 0.822);
     }
 
     .accordion-body{
